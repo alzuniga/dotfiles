@@ -95,4 +95,13 @@ call vundle#end()		                " required
 		\ }
 	" }}}
 " }}}
+" Mappings {{{
+noremap <Up> <NOP>      " disable UP arrow key
+noremap <Right> <NOP>   " disable RIGHT arrow key
+noremap <Down> <NOP>    " disable DOWN arrow key
+noremap <Left> <NOP>    " disable LEFT arrow key
+" }}}
+" Functions {{{
+
+"}}}
 " vim:foldmethod=marker:foldlevel=0: set filetype=off
