@@ -1,4 +1,6 @@
 " General Settings {{{
+set background=dark		" Set background to dark
+set t_Co=256			" set to 256 colors
 colorscheme monokai
 if version >= 600
     filetype plugin on
@@ -15,11 +17,9 @@ set encoding=utf-8		" set encoding to utf-8
 set laststatus=2        " Always display the status
 set modelines=1			" Special comments to declare vim settings
 set nocompatible		" turn off VI compatibility, *required
-set t_Co=256			" set to 256 colors
 " }}}
 " UI Configuration {{{
 set autoindent			" auto indent new line as previous
-set background=dark		" Set background to dark
 set copyindent			" copy characters used for indenting
 				        " on existing line
 set cursorline			" draw horizontal highlight/underline
@@ -96,10 +96,10 @@ call vundle#end()		                " required
 	" }}}
 " }}}
 " Mappings {{{
-noremap <Up> <NOP>      " disable UP arrow key
-noremap <Right> <NOP>   " disable RIGHT arrow key
-noremap <Down> <NOP>    " disable DOWN arrow key
-noremap <Left> <NOP>    " disable LEFT arrow key
+"noremap <Up> <NOP>      " disable UP arrow key
+"noremap <Right> <NOP>   " disable RIGHT arrow key
+"noremap <Down> <NOP>    " disable DOWN arrow key
+"noremap <Left> <NOP>    " disable LEFT arrow key
 " }}}
 " Functions {{{
 
