@@ -27,7 +27,7 @@ set cursorline			" draw horizontal highlight/underline
 set lazyredraw			" Screen will not redraw while executing
 				        " macros, registers, or other non-typed
 				        " commands
-set number              " turn line numbers on
+set relativenumber              " turn line numbers on
 set showmatch			" Highlight matching brace, bracket,
 				        " parenthesis
 set wildmenu			" Command-line completion enhanced mode
