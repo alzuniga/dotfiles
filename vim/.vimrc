@@ -1,4 +1,6 @@
 " General Settings {{{
+set background=dark		" Set background to dark
+set t_Co=256			" set to 256 colors
 colorscheme monokai
 if version >= 600
     filetype plugin on
@@ -15,11 +17,9 @@ set encoding=utf-8		" set encoding to utf-8
 set laststatus=2        " Always display the status
 set modelines=1			" Special comments to declare vim settings
 set nocompatible		" turn off VI compatibility, *required
-set t_Co=256			" set to 256 colors
 " }}}
 " UI Configuration {{{
 set autoindent			" auto indent new line as previous
-set background=dark		" Set background to dark
 set copyindent			" copy characters used for indenting
 				        " on existing line
 set cursorline			" draw horizontal highlight/underline
@@ -27,8 +27,12 @@ set cursorline			" draw horizontal highlight/underline
 set lazyredraw			" Screen will not redraw while executing
 				        " macros, registers, or other non-typed
 				        " commands
+<<<<<<< HEAD
 set relativenumber      " turn on relative line numbers
 set number
+=======
+set relativenumber              " turn line numbers on
+>>>>>>> 10666fee81f8c644669b111b2d2c7cfd7c9812f0
 set showmatch			" Highlight matching brace, bracket,
 				        " parenthesis
 set wildmenu			" Command-line completion enhanced mode
