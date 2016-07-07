@@ -9,7 +9,7 @@ set autoread			" auto reload file changed outside
 set backspace=2			" allow backspacing over autoindent,
 		        		" line breaks, start of insert
 set browsedir=buffer	" set browser directory to related buffer
-set clipboard=unamed	" use clipboard register
+set clipboard=unnamed,unnamedplus,autoselect,html	" use clipboard register
 set directory=/tmp,.	" directory for swap file
 set encoding=utf-8		" set encoding to utf-8
 set laststatus=2        " Always display the status
@@ -27,7 +27,8 @@ set cursorline			" draw horizontal highlight/underline
 set lazyredraw			" Screen will not redraw while executing
 				        " macros, registers, or other non-typed
 				        " commands
-set number              " turn line numbers on
+set relativenumber      " turn on relative line numbers
+set number
 set showmatch			" Highlight matching brace, bracket,
 				        " parenthesis
 set wildmenu			" Command-line completion enhanced mode
@@ -68,16 +69,22 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'           " let Vundle manage Vundle, *required
 	"  Plugins {{{
-	    Plugin 'ctrlpvim/ctrlp.vim'             " ctrlp = control-p fuzzy searching
-	    Plugin 'flazz/vim-colorschemes'         " vim-colorschemes - colorschme pack
-	    Plugin 'itchyny/lightline.vim'          " lightline - statusline/tabline
-	    Plugin 'mattn/emmet-vim'                " emmet-vim - code abbreviation expansion
-	    Plugin 'mattn/webapi-vim'               " webapi-vim - vim interface to web api
-	    Plugin 'hail2u/vim-css3-syntax'         " vim-css3-syntax - css3 syntax highlighting
-	    Plugin 'groenewege/vim-less'            " vim-less - less syntax highlighting
-	    Plugin 'jiangmiao/auto-pairs'           " auto-pairs - insert/delete brackets, parens, quotes in pairs
-        Plugin 'sickill/vim-monokai'            " vim-monokai - monokai color theme
-        Plugin 'terryma/vim-multiple-cursors'   " vim-multiple-cursors - multiple cursors
+      Plugin 'ctrlpvim/ctrlp.vim'             " ctrlp = control-p fuzzy searching
+      Plugin 'flazz/vim-colorschemes'         " vim-colorschemes - colorschme pack
+      Plugin 'itchyny/lightline.vim'          " lightline - statusline/tabline
+      Plugin 'mattn/emmet-vim'                " emmet-vim - code abbreviation expansion
+      Plugin 'mattn/webapi-vim'               " webapi-vim - vim interface to web api
+      Plugin 'hail2u/vim-css3-syntax'         " vim-css3-syntax - css3 syntax highlighting
+      Plugin 'groenewege/vim-less'            " vim-less - less syntax highlighting
+      Plugin 'jiangmiao/auto-pairs'           " auto-pairs - insert/delete brackets, parens, quotes in pairs
+      Plugin 'sickill/vim-monokai'            " vim-monokai - monokai color theme
+      Plugin 'terryma/vim-multiple-cursors'   " vim-multiple-cursors - multiple cursors
+      "Plugin 'tomtom/tcomment_vim'            " tcomment_vim - universal comment plugin
+      Plugin 'tpope/vim-commentary'           " vim-commentary - comments out
+      Plugin 'wikitopian/hardmode.git'        " hardmode - makes one rely on character-wise navigation
+      Plugin 'scrooloose/syntastic'           " syntastic - syntax checking for vim
+      Plugin 'cakebaker/scss-syntax.vim'      " scss-syntax - scss/sass syntax support
+      
 	" }}}
 call vundle#end()		                " required
 " }}}
@@ -96,10 +103,10 @@ call vundle#end()		                " required
 	" }}}
 " }}}
 " Mappings {{{
-noremap <Up> <NOP>      " disable UP arrow key
-noremap <Right> <NOP>   " disable RIGHT arrow key
-noremap <Down> <NOP>    " disable DOWN arrow key
-noremap <Left> <NOP>    " disable LEFT arrow key
+"noremap <Up> <NOP>      " disable UP arrow key
+"noremap <Right> <NOP>   " disable RIGHT arrow key
+"noremap <Down> <NOP>    " disable DOWN arrow key
+"noremap <Left> <NOP>    " disable LEFT arrow key
 " }}}
 " Functions {{{
 
