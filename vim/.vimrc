@@ -27,12 +27,8 @@ set cursorline			" draw horizontal highlight/underline
 set lazyredraw			" Screen will not redraw while executing
 				        " macros, registers, or other non-typed
 				        " commands
-<<<<<<< HEAD
 set relativenumber      " turn on relative line numbers
-set number
-=======
-set relativenumber              " turn line numbers on
->>>>>>> 10666fee81f8c644669b111b2d2c7cfd7c9812f0
+set number              " turn line numbers on
 set showmatch			" Highlight matching brace, bracket,
 				        " parenthesis
 set wildmenu			" Command-line completion enhanced mode
@@ -96,7 +92,7 @@ call vundle#end()		                " required
 	" CTRL-P {{{
 	set runtimepath^=~/.vim/bundle/ctrlp.vim
 	" }}}
-	" Emmet {{{
+	"  Emmet {{{
 	    let g:user_emmet_leader_key='<c-e>'
 	    " let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/snippets/.snippets_custom.json')), "\n"))
 	" }}}
